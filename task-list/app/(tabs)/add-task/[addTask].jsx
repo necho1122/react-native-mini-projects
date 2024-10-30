@@ -25,8 +25,6 @@ const AddTask = () => {
 	const [date, setDate] = useState(dayjs().toDate());
 	const [showDatePicker, setShowDatePicker] = useState(false);
 
-	console.log(date);
-
 	useEffect(() => {
 		loadTasks();
 	}, []);
