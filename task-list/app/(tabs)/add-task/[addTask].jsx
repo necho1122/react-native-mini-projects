@@ -58,7 +58,7 @@ const AddTask = () => {
 			id: uuid.v4(),
 			title,
 			description,
-			dueDate: date, // Cambiado de dueDate a date
+			dueDate: dayjs(date).format('YYYY-MM-DD'), // Cambiado de dueDate a date
 			priority,
 			status: status,
 			category,
